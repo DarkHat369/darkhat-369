@@ -1,0 +1,22 @@
+# Fibonaccii Series
+# 0 1 1 2 3 5 8
+nterms = int(input("How Many Terms?"))
+# First two terms
+n1 = 0
+n2 = 1
+count = 0
+# Check if the nunber of terms is valid
+if nterms <= 0:
+   print("Fibonaccii Sequence:")
+elif nterms  == 1:
+   print("Fibonaccii Sequence upto", nterms, ":")
+   print(n1)
+else:
+   print("Fibonacci Sequence:")
+   while count < nterms:
+       print(n1)
+       nth = n1 + n2
+       # Update  the Values
+       n1 = n2
+       n2 = nth
+       count += 1
